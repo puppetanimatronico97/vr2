@@ -1,0 +1,312 @@
+-- Made For XXDDD private dino sim Mod menu
+local DUI = Instance.new("ScreenGui")
+local DinoFrame = Instance.new("Frame")
+local UnW = Instance.new("TextButton")
+local SZ = Instance.new("TextButton")
+local LowG = Instance.new("TextButton")
+local NF = Instance.new("TextButton")
+local UNF = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local SaveP = Instance.new("TextButton")
+local LoadP = Instance.new("TextButton")
+local Insta = Instance.new("TextButton")
+local Cred = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local T = Instance.new("TextLabel")
+
+
+
+DUI.Name = "DUI"
+DUI.Parent = game.CoreGui
+
+DinoFrame.Name = "DinoFrame"
+DinoFrame.Parent = DUI
+DinoFrame.Active = true
+DinoFrame.Draggable = true
+DinoFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+DinoFrame.BackgroundTransparency = 0.30000001192093
+DinoFrame.BorderColor3 = Color3.new(0.333333, 1, 0)
+DinoFrame.BorderSizePixel = 2
+DinoFrame.Position = UDim2.new(0.0360090025, 0, 0.116647795, 0)
+DinoFrame.Selectable = true
+DinoFrame.Size = UDim2.new(0, 218, 0, 663)
+
+UnW.Name = "UnW"
+UnW.Parent = DinoFrame
+UnW.BackgroundColor3 = Color3.new(0, 0, 0)
+UnW.BackgroundTransparency = 0.60000002384186
+UnW.BorderSizePixel = 0
+UnW.Position = UDim2.new(0.0412844047, 0, 0.0915520489, 0)
+UnW.Size = UDim2.new(0, 200, 0, 50)
+UnW.Font = Enum.Font.SourceSans
+UnW.Text = "Unlimited Water"
+UnW.TextColor3 = Color3.new(170,0,0)
+UnW.TextSize = 20
+
+SZ.Name = "SZ"
+SZ.Parent = DinoFrame
+SZ.BackgroundColor3 = Color3.new(0, 0, 0)
+SZ.BackgroundTransparency = 0.60000002384186
+SZ.BorderSizePixel = 0
+SZ.Position = UDim2.new(0.0412844047, 0, 0.472756058, 0)
+SZ.Size = UDim2.new(0, 200, 0, 50)
+SZ.Font = Enum.Font.SourceSans
+SZ.Text = "Safe Zone"
+SZ.TextColor3 = Color3.new(170,0,0)
+SZ.TextSize = 20
+
+LowG.Name = "LowG"
+LowG.Parent = DinoFrame
+LowG.BackgroundColor3 = Color3.new(0, 0, 0)
+LowG.BackgroundTransparency = 0.60000002384186
+LowG.BorderSizePixel = 0
+LowG.Position = UDim2.new(0.0412844419, 0, 0.563173115, 0)
+LowG.Size = UDim2.new(0, 200, 0, 50)
+LowG.Font = Enum.Font.SourceSans
+LowG.Text = "Low Gravity"
+LowG.TextColor3 = Color3.new(170,0,0)
+LowG.TextSize = 20
+
+NF.Name = "NF"
+NF.Parent = DinoFrame
+NF.BackgroundColor3 = Color3.new(0, 0, 0)
+NF.BackgroundTransparency = 0.60000002384186
+NF.BorderSizePixel = 0
+NF.Position = UDim2.new(0.0412844047, 0, 0.279750884, 0)
+NF.Size = UDim2.new(0, 200, 0, 50)
+NF.Font = Enum.Font.SourceSans
+NF.Text = "No Fog"
+NF.TextColor3 = Color3.new(170,0,0)
+NF.TextSize = 20
+
+UNF.Name = "UNF"
+UNF.Parent = DinoFrame
+UNF.BackgroundColor3 = Color3.new(0, 0, 0)
+UNF.BackgroundTransparency = 0.60000002384186
+UNF.BorderSizePixel = 0
+UNF.Position = UDim2.new(0.0412844047, 0, 0.185483068, 0)
+UNF.Size = UDim2.new(0, 200, 0, 50)
+UNF.Font = Enum.Font.SourceSans
+UNF.Text = "Unlimited Food"
+UNF.TextColor3 = Color3.new(170,0,0)
+UNF.TextSize = 20
+
+Esp.Name = "Esp"
+Esp.Parent = DinoFrame
+Esp.BackgroundColor3 = Color3.new(0, 0, 0)
+Esp.BackgroundTransparency = 0.60000002384186
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.0412844047, 0, 0.377640158, 0)
+Esp.Size = UDim2.new(0, 200, 0, 50)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.new(170,0,0)
+Esp.TextSize = 20
+
+SaveP.Name = "SaveP"
+SaveP.Parent = DinoFrame
+SaveP.BackgroundColor3 = Color3.new(0, 0, 0)
+SaveP.BackgroundTransparency = 0.60000002384186
+SaveP.BorderSizePixel = 0
+SaveP.Position = UDim2.new(0.0412844047, 0, 0.749186933, 0)
+SaveP.Size = UDim2.new(0, 200, 0, 50)
+SaveP.Font = Enum.Font.SourceSans
+SaveP.Text = "Save Position"
+SaveP.TextColor3 = Color3.new(170,0,0)
+SaveP.TextSize = 20
+
+LoadP.Name = "LoadP"
+LoadP.Parent = DinoFrame
+LoadP.BackgroundColor3 = Color3.new(0, 0, 0)
+LoadP.BackgroundTransparency = 0.60000002384186
+LoadP.BorderSizePixel = 0
+LoadP.Position = UDim2.new(0.0412844047, 0, 0.657656431, 0)
+LoadP.Size = UDim2.new(0, 200, 0, 50)
+LoadP.Font = Enum.Font.SourceSans
+LoadP.Text = "Load Position"
+LoadP.TextColor3 = Color3.new(170,0,0)
+LoadP.TextSize = 20
+
+Insta.Name = "Insta"
+Insta.Parent = DinoFrame
+Insta.BackgroundColor3 = Color3.new(0, 0, 0)
+Insta.BackgroundTransparency = 0.60000002384186
+Insta.BorderSizePixel = 0
+Insta.Position = UDim2.new(0.0412844047, 0, 0.846317708, 0)
+Insta.Size = UDim2.new(0, 200, 0, 50)
+Insta.Font = Enum.Font.SourceSans
+Insta.Text = "Instant Menu"
+Insta.TextColor3 = Color3.new(170,0,0)
+Insta.TextSize = 20
+
+Cred.Name = "Cred"
+Cred.Parent = DinoFrame
+Cred.BackgroundColor3 = Color3.new(0, 0, 0)
+Cred.BackgroundTransparency = 0.60000002384186
+Cred.BorderColor3 = Color3.new(0.733333, 1, 0)
+Cred.BorderSizePixel = 2
+Cred.Position = UDim2.new(0, 0, 0.941176474, 0)
+Cred.Size = UDim2.new(0, 218, 0, 39)
+Cred.Font = Enum.Font.SourceSans
+Cred.Text = "Made by ThisW0ntGetBanned#7965"
+Cred.TextColor3 = Color3.new(0, 0.333333, 1)
+Cred.TextSize = 16
+Cred.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = DinoFrame
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.Position = UDim2.new(0.894495428, 0, -0.00150829565, 0)
+Close.Size = UDim2.new(0, 23, 0, 24)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 1, 0)
+Close.TextSize = 20
+
+T.Name = "T"
+T.Parent = DinoFrame
+T.BackgroundColor3 = Color3.new(0, 0, 0)
+T.BackgroundTransparency = 0.60000002384186
+T.BorderColor3 = Color3.new(0.733333, 1, 0)
+T.BorderSizePixel = 2
+T.Size = UDim2.new(0, 218, 0, 46)
+T.Font = Enum.Font.SourceSans
+T.Text = "Dino lx 1.0.0 Mod Menu"
+T.TextColor3 = Color3.new(0, 0.333333, 1)
+T.TextSize = 25
+T.TextWrapped = true
+
+SaveP.MouseButton1Click:connect(function()
+asd=game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
+end)
+
+LoadP.MouseButton1Click:connect(function()
+	
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=
+CFrame.new(asd)+Vector3.new(1,0,0)
+
+end)
+
+UNF.MouseButton1Click:connect(function()
+	
+game.Workspace.GameEvents.EatPlant:FireServer(Workspace.GameMap.Ferns.Fern, 2) 
+end)
+
+Insta.MouseButton1Click:connect(function()
+	
+game.Workspace.GameEvents.GoToMenu:FireServer()
+end)
+
+SZ.MouseButton1Click:connect(function()
+	
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(-751,123,-796)+Vector3.new(1,0,0)
+end)
+
+UnW.MouseButton1Click:connect(function()
+	
+game:GetService("Workspace").Water.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local A_1 = game:GetService("Workspace").Water
+local A_2 = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.p
+local Event = game:GetService("Workspace").GameEvents.addThirst
+Event:FireServer(A_1, A_2)end)
+
+LowG.MouseButton1Click:connect(function()
+
+	game.Workspace.Gravity = 10
+end)
+
+Close.MouseButton1Click:connect(function()
+	DinoFrame:Destroy()
+end)
+
+NF.MouseButton1Click:connect(function()
+
+	game.Lighting.FogEnd = 100000
+	game.Lighting.FogStart = 100000
+end)
+
+Esp.MouseButton1Click:connect(function()
+    espenabled = false
+Esp.MouseButton1Up:connect(function()
+    if espenabled == false then
+        espenabled = true
+        Esp.Text = ("Disable ESP")
+
+local faces = {"Back","Bottom","Front","Left","Right","Top"}
+for _, v in pairs(game.Players:GetChildren()) do if v.Name ~= game.Players.LocalPlayer.Name then
+    local bgui = Instance.new("BillboardGui",v.Character.Head)
+    bgui.Name = ("EGUI")
+    bgui.AlwaysOnTop = true
+    bgui.ExtentsOffset = Vector3.new(0,3,0)
+    bgui.Size = UDim2.new(0,200,0,50)
+    local nam = Instance.new("TextLabel",bgui)
+    nam.Text = v.Name
+    nam.BackgroundTransparency = 1
+    nam.TextSize = 30
+    nam.Font = ("Arial")
+    nam.TextColor3 = Color3.new(0,0,0)
+    nam.Size = UDim2.new(0,200,0,50)
+    if v.Backpack:FindFirstChild("Gun") or v.Character:FindFirstChild("Gun") then
+        for _, p in pairs(v.Character:GetChildren()) do
+            if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+                for _, f in pairs(faces) do
+                    local m = Instance.new("SurfaceGui",p)
+                    m.Name = ("EGUI")
+                    m.Face = f
+                    m.AlwaysOnTop = true
+                    local mf = Instance.new("Frame",m)
+                    mf.Size = UDim2.new(1,0,1,0)
+                    mf.BorderSizePixel = 0
+                    mf.BackgroundTransparency = 0.5
+                    mf.BackgroundColor3 = Color3.new(0,0,255)
+                end
+            end
+        end
+    elseif v.Backpack:FindFirstChild("Knife") or v.Character:FindFirstChild("Knife") then
+        for _, p in pairs(v.Character:GetChildren()) do
+            if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+                for _, f in pairs(faces) do
+                    local m = Instance.new("SurfaceGui",p)
+                    m.Name = ("EGUI")
+                    m.Face = f
+                    m.AlwaysOnTop = true
+                    local mf = Instance.new("Frame",m)
+                    mf.Size = UDim2.new(1,0,1,0)
+                    mf.BorderSizePixel = 0
+                    mf.BackgroundTransparency = 0.5
+                    mf.BackgroundColor3 = Color3.new(255,0,0)
+                end
+            end
+        end
+    else
+        for _, p in pairs(v.Character:GetChildren()) do
+            if p.Name == ("Head") or p.Name == ("Torso") or p.Name == ("Right Arm") or p.Name == ("Right Leg") or p.Name == ("Left Arm") or p.Name == ("Left Leg") then 
+                for _, f in pairs(faces) do
+                    local m = Instance.new("SurfaceGui",p)
+                    m.Name = ("EGUI")
+                    m.Face = f
+                    m.AlwaysOnTop = true
+                    local mf = Instance.new("Frame",m)
+                    mf.Size = UDim2.new(1,0,1,0)
+                    mf.BorderSizePixel = 0
+                    mf.BackgroundTransparency = 0.5
+                    mf.BackgroundColor3 = Color3.new(0,255,0)
+                    local q = ("traeglaelnltlejsjs.rkakpythocr")
+                end
+            end
+        end
+    end
+end end
+
+    else
+        espenabled = false
+        Esp.Text = ("Enable ESP")
+        for _, v in pairs(game.Workspace:GetDescendants()) do
+            if v.Name == ("EGUI") then
+                v:Remove()
+            end
+        end
+    end
+end)
+end)
